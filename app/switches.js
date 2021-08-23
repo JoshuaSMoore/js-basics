@@ -12,9 +12,47 @@
 
 
 function daysPosition(day, offset) {
+    switch(day){
+        case "Sunday" : 
+        if (offset){
+            return 7
+        }
+        return 1
+     
+    case "Monday":
+    if (offset){
+        return 1
+    } return 7
 
+    case "Tuesday":
+        if(offset){
+            return 2
+        } return 1
+
+        case "Wednesday":
+        if(offset){
+            return 3
+        } return 1
+
+        case "Thursday":
+        if(offset){
+            return 4
+        } return 1
+
+        case "Friday":
+        if(offset){
+            return 5
+        } return 1
+
+        case "Saturday":
+        if(offset){
+            return 6
+        } return 1
+
+        default: return "That's not a day of the week"
 }
 
+}
 
 // --------------------------------------------
 
@@ -32,7 +70,15 @@ function daysPosition(day, offset) {
  */
 
  function golfScore(score, par) {
-
+ switch(score - par){
+     case -3: return "Ace";
+     case -2: return "Eagle";
+     case -1: return "Birdie";
+     case 0: return "Par";
+     case +1: return "Bogie";
+     case +2: return "Double Bogie";
+     default: return "Ouch"
+ }
  }
  
 
