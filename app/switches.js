@@ -6,6 +6,11 @@
     // input: 'Sunday', true
     // output: 7
 
+    // true => monday = 1
+    // false => monday =7
+
+
+
 function daysPosition(day, offset) {
 
 }
